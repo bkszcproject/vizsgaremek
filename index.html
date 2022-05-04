@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+    <html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== Koponya ===============-->
+        <link rel="shortcut icon" href="assets/img/koponya.png" type="image/x-icon">
+
+        <link href="https://www.1001fonts.com/raven-scream-font.html">
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--=============== SWIPER CSS ===============--> 
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============--> 
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+        <title>Halloweeni weboldal</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/jujci2.png" alt="" class="nav__logo-img" id="nav_logo-img">
+
+                   
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Főoldal</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">Rólunk</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#trick" class="nav__link">Cukorka</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#new" class="nav__link">Újdonságok</a>
+                        </li>
+
+                        <div class="center" >
+                            <input type="checkbox" id="show">
+                            <label for="show" class="show-btn button--ghost" onclick="toggle()">Bejelentkezés</label>
+                            <div class="log_container" id="popup">
+                                <label for="show" class="close-btn fas fa-times" onclick="toggle()"></label>
+                                <div class="text"> Bejelentkezés</div>
+                                <form action="#">
+                                    <div class="data">
+                                        <label>E-mail cím</label>
+                                        <input type="text" placeholder="valaki@gmail.com" required>
+                                    </div>
+                                    <div class="data">
+                                        <label>Jelszó</label>
+                                        <input type="password" placeholder="Jelszó" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]){8,}$" title="Tartalmaznia kell legalább egy számot, egy nagy- és egy kis betűt valamint legalább 8 karakteres legyen" required>
+                                    </div>
+                                    <div class="forgot-pass"><a href="#">Elfelejtetted a jelszavad?</a></div>
+                                    <div class="btn">
+                                        <div class="inner"></div>
+                                        <button type="submit">Bejelentkezés</button>
+                                    </div>
+                                    <div class="signup-link">Nem vagy tag? <a href="#">Regisztráció</a></div>
+                                </form>
+                        </div>
+                        </div>
+
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+
+                    <img src="assets/img/pok-img.png" alt="" class="nav__img">
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+
+            </nav>
+        </header>
+
+        <main class="main" id="main">
+            <div id="blur">
+            <!--==================== HOME ====================-->
+            <section class="home container" id="home">
+                <div class="swiper home-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- HOME 1 -->
+                        <section class="swiper-slide">
+                            <div class="home__content grid">
+                                <div class="home__group">
+                                    <img src="assets/img/tok1.png" alt="" class="home__img">
+                                    <div class="home__indicator"></div>
+    
+                                    <div class="home__details-img">
+                                        <h4 class="home__details-title">A "Romboló"</h4>
+                                        <span class="home__details-subtitle">Az élő tök</span>
+                                    </div>
+                                </div>
+    
+                                <div class="home__data">
+                                    <h3 class="home__subtitle">#1 A legijesztőbb szellem</h3>
+                                    <h1 class="home__title">UOOOO <br> CSOKIT VAGY <br> CSALOK!!</h1>
+                                    <p class="home__description">Abbadon: Anarhiát és káoszt szül. Ő az ura azoknak a démonsáskáknak, akik emberek arcait, skorpiók farkait, és szárnyas lovak testét viselik. 
+                                    Ne keverd össze Abaddont Apollyonnal (a pusztítás angyalával), aki az abyss kulcsait őrzi.
+
+                                    </p>
+
+                                    <div class="home__buttons">
+                                        <a href="#" class="button">Rendelje meg most</a>
+                                        <a href="#" class="button--link button--flex">Nyomonkövetés <i class='bx bx-right-arrow-alt button__icon'></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- HOME 2 -->
+                        <section class="swiper-slide">
+                            <div class="home__content grid">
+                                <div class="home__group">
+                                    <img src="assets/img/home2-img.png" alt="" class="home__img">
+                                    <div class="home__indicator"></div>
+    
+                                    <div class="home__details-img">
+                                        <h4 class="home__details-title">Belzebub & Berith</h4>
+                                        <span class="home__details-subtitle">Szavakkal nem lehet leírni őket</span>
+                                    </div>
+                                </div>
+    
+                                <div class="home__data">
+                                    <h3 class="home__subtitle">#2 A legjobb páros</h3>
+                                    <h1 class="home__title">HOZD VISSZA <br> A  <br> LELKEMET</h1>
+                                    <p class="home__description">Belzebub: Ismerik még, mint a Halál Hercegét. Eredetileg Szeráf angyal volt. 
+                                        Egy légy alakjában jelenik meg és ő a parancsnoka a Légy Rendjének. Ő az eretnekség patrónusa.
+                                        <br>Berith: Az emberek és az Ördög közti szerződéseket nyélbe ütni szólítják. Viszálykodó, ellenségeskedő, istenkáromló és gyilkos gondolatokat inspirál. 
+                                        Ő az engedetlenség patrónusa.
+                                    </p>
+
+                                    <div class="home__buttons">
+                                        <a href="#" class="button">Rendelje meg most</a>
+                                        <a href="#" class="button--link button--flex">Nyomon követés <i class='bx bx-right-arrow-alt button__icon'></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- HOME 3 -->
+                        <section class="swiper-slide">
+                            <div class="home__content grid">
+                                <div class="home__group">
+                                    <img src="assets/img/ghost3.png" alt="" class="home__img">
+                                    <div class="home__indicator"></div>
+    
+                                    <div class="home__details-img">
+                                        <h4 class="home__details-title">Anne</h4>
+                                        <span class="home__details-subtitle">A fejnélküli nő</span>
+                                    </div>
+                                </div>
+    
+                                <div class="home__data">
+                                    <h3 class="home__subtitle">#3 A legijesztőbb szellem</h3>
+                                    <h1 class="home__title">ANNE<br> BOLEYN <br> SZELLEME</h1>
+                                    <p class="home__description">Ezt a szellemet többször látták a Tower Castle-ben. Ennek a nőnek a szelleme fej nélkül vándorol a folyosókon.
+                                        Az egyedül kóborló férfiak lelkére vadászik, akikben érzi a gonosz szellemek jelenlétét.
+                                    </p>
+
+                                    <div class="home__buttons">
+                                        <a href="#" class="button">Rendelje meg most</a>
+                                        <a href="#" class="button--link button--flex">Nyomon követés <i class='bx bx-right-arrow-alt button__icon'></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            
+            <!--==================== Kateógriák ====================-->
+            <section class="section category">
+                <h2 class="section__title">Kedvenc Ijesztő <br> Kategóriák</h2>
+
+                <div class="category__container container grid">
+                    <div class="category__data">
+                        <img src="assets/img/ghost1.png" alt="" class="category__img">
+                        <h3 class="category__title">Szellemek</h3>
+                        <p class="category__description">Válassza ki, a legfélelmetesebb szellemeket.</p>
+                    </div>
+
+                    <div class="category__data">
+                        <img src="assets/img/tok2.png" alt="" class="category__img">
+                        <h3 class="category__title">Tökök</h3>
+                        <p class="category__description">A legrémísztőbb tökök.</p>
+                    </div>
+
+                    <div class="category__data">
+                        <img src="assets/img/sapi1.png" alt="" class="category__img">
+                        <h3 class="category__title">Boszorkány sapkák</h3>
+                        <p class="category__description">Válassza ki a legstílusosabb boszorkánysapkákat.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== A Halloween-ról ====================-->
+            <section class="section about" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">A Halloween <br> Éjszakájáról</h2>
+                        <p class="about__description">A mindenszentek vagy halottak éjszakáját október 31-én ünneplik, és ez a 
+                            nagyon szórakoztató nemzetközi ünnepség, ahol mindenki rémisztő maskarákba/jelmezekbe bújik, és az utcákat járják.
+                        </p>
+                        <a href="#" class="button">Tudj meg többet</a>
+                    </div>
+
+                    <img src="assets/img/ust.png" alt="" class="about__img">
+                </div>
+            </section>
+
+            <!--==================== Csokit Vagy Csalok ====================-->
+            <section class="section trick" id="trick">
+                <h2 class="section__title">Csokit Vagy Csalok</h2>
+
+                <div class="trick__container container grid">
+                    <div class="trick__content">
+                        <img src="assets/img/karamell.png" alt="" class="trick__img">
+                        <h3 class="trick__title">Karamell</h3>
+                        <span class="trick__subtitle">Cukorka</span>
+                        <span class="trick__price">690 Ft</span>
+                        <button class="button trick__button">
+                            <i class='bx bx-cart-alt trick__icon'></i>
+                        </button>
+                    </div>
+
+                    <div class="trick__content">
+                        <img src="assets/img/csont.png" alt="" class="trick__img">
+                        <h3 class="trick__title">Csont</h3>
+                        <span class="trick__subtitle">Tartozék</span>
+                        <span class="trick__price">1040 Ft</span>
+                        <button class="button trick__button">
+                            <i class='bx bx-cart-alt trick__icon'></i>
+                        </button>
+                    </div>
+
+                    <div class="trick__content">
+                        <img src="assets/img/madarijeszto.png" alt="" class="trick__img">
+                        <h3 class="trick__title">Madárijesztő</h3>
+                        <span class="trick__subtitle">Tartozék</span>
+                        <span class="trick__price">4250 Ft</span>
+                        <button class="button trick__button">
+                            <i class='bx bx-cart-alt trick__icon'></i>
+                        </button>
+                    </div>
+
+                    <div class="trick__content">
+                        <img src="assets/img/nyaloka.png" alt="" class="trick__img">
+                        <h3 class="trick__title">Halloween nyalókák</h3>
+                        <span class="trick__subtitle">Cukorka</span>
+                        <span class="trick__price">490 Ft</span>
+                        <button class="button trick__button">
+                            <i class='bx bx-cart-alt trick__icon'></i>
+                        </button>
+                    </div>
+
+                    <div class="trick__content">
+                        <img src="assets/img/tok3.png" alt="" class="trick__img">
+                        <h3 class="trick__title">Cukor Tök</h3>
+                        <span class="trick__subtitle">Cukorka</span>
+                        <span class="trick__price">3250 Ft</span>
+                        <button class="button trick__button">
+                            <i class='bx bx-cart-alt trick__icon'></i>
+                        </button>
+                    </div>
+
+                    <div class="trick__content">
+                        <img src="assets/img/ghost2.png" alt="" class="trick__img">
+                        <h3 class="trick__title">Szellem</h3>
+                        <span class="trick__subtitle">Tartozék</span>
+                        <span class="trick__price">5390 Ft</span>
+                        <button class="button trick__button">
+                            <i class='bx bx-cart-alt trick__icon'></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            
+            <!--==================== Újdonságok ====================-->
+            <section class="section discount">
+                <div class="discount__container container grid">
+                    <div class="discount__data">
+                        <h2 class="discount__title">50% Kedvezmény <br> Új termékekből</h2>
+                        <a href="#new" class="button">Menj az újdonságokra</a>
+                    </div>
+
+                    <img src="assets/img/moon.png" alt="" class="discount__img">
+                </div>
+            </section>
+
+            <!--==================== Hamarosan kapható termékek ====================-->
+            <section class="section new" id="new">
+                <h2 class="section__title">Hamarosan kapható termékek</h2>
+
+                <div class="new__container container">
+                    <div class="swiper new-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="new__content swiper-slide">
+                                <div class="new__tag">Új</div>
+                                <img src="assets/img/kisertethaz.png" alt="" class="new__img">
+                                <h3 class="new__title">Kísértetház</h3>
+                                <span class="new__subtitle">Tartozék</span>
+                                
+                                <div class="new__prices">
+                                    <span class="new__price">7800 Ft</span>
+                                    <span class="new__discount">13.000 Ft</span>
+                                </div>
+
+                                <button class="button new__button">
+                                    <i class='bx bx-cart-alt new__icon'></i>
+                                </button>
+                            </div>
+        
+                            <div class="new__content swiper-slide">
+                                <div class="new__tag">Új</div>
+                                <img src="assets/img/gyertya-img.png" alt="" class="new__img">
+                                <h3 class="new__title">Halloweeni gyertya</h3>
+                                <span class="new__subtitle">Tartozék</span>
+        
+                                <div class="new__prices">
+                                    <span class="new__price">2470 Ft</span>
+                                    <span class="new__discount">4960 Ft</span>
+                                </div>
+
+                                <button class="button new__button">
+                                    <i class='bx bx-cart-alt new__icon'></i>
+                                </button>
+                            </div>
+        
+                            <div class="new__content swiper-slide">
+                                <div class="new__tag">Új</div>
+                                <img src="assets/img/boszi sapi2.png" alt="" class="new__img">
+                                <h3 class="new__title">Boszorkány Sapka</h3>
+                                <span class="new__subtitle">Tartozék</span>
+        
+                                <div class="new__prices">
+                                    <span class="new__price">1500 Ft</span>
+                                    <span class="new__discount">3000 Ft</span>
+                                </div>
+
+                                <button class="button new__button">
+                                    <i class='bx bx-cart-alt new__icon'></i>
+                                </button>
+                            </div>
+        
+                            <div class="new__content swiper-slide">
+                                <div class="new__tag">Új</div>
+                                <img src="assets/img/rip-img.png" alt="" class="new__img">
+                                <h3 class="new__title">Nyugodj békében</h3>
+                                <span class="new__subtitle">Tartozék</span>
+        
+                                <div class="new__prices">
+                                    <span class="new__price">10.000 Ft</span>
+                                    <span class="new__discount">14.850 Ft</span>
+                                </div>
+
+                                <button class="button new__button">
+                                    <i class='bx bx-cart-alt new__icon'></i>
+                                </button>
+                            </div>
+        
+                            <div class="new__content swiper-slide">
+                                <div class="new__tag">Új</div>
+                                <img src="assets/img/kristalygomb-img.png" alt="" class="new__img">
+                                <h3 class="new__title">Félelmetes kristálygömb</h3>
+                                <span class="new__subtitle">Tartozék</span>
+        
+                                <div class="new__prices">
+                                    <span class="new__price">780 Ft</span>
+                                    <span class="new__discount">2170 Ft</span>
+                                </div>
+
+                                <button class="button new__button">
+                                    <i class='bx bx-cart-alt new__icon'></i>
+                                </button>
+                            </div>
+        
+                            <div class="new__content swiper-slide">
+                                <div class="new__tag">Új</div>
+                                <img src="assets/img/sepru.png" alt="" class="new__img">
+                                <h3 class="new__title">Boszorkányseprű</h3>
+                                <span class="new__subtitle">Tartozék</span>
+        
+                                <div class="new__prices">
+                                    <span class="new__price">1800 Ft</span>
+                                    <span class="new__discount">4200 Ft</span>
+                                </div>
+
+                                <button class="button new__button">
+                                    <i class='bx bx-cart-alt new__icon'></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== Hírlevél ====================-->
+            <section class="section newsletter">
+                <div class="newsletter__container container">
+                    <h2 class="section__title">Hírlevél</h2>
+                    <p class="newsletter__description">
+                        A megjelenő termékekről. Közvetlenül az ön postaládájába
+                    </p>
+
+                    <form action="" class="newsletter__form">
+                        <input id="email" type="text" placeholder="e-mail cím megadása" class="newsletter__input">
+                        <button id="signup" class="button">
+                            Iratkozz fel
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </div>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+            <footer class="footer section">
+                <div class="footer__container container grid">
+                    <div class="footer__content">
+                        <a href="#" class="footer__logo">
+                            <img src="assets/img/logo.png" alt="" class="footer__logo-img">
+                            Halloween
+                        </a>
+
+                        <p class="footer__description">Élvezze a legfélelmetesebb éjszakát <br> az életedben.</p>
+                        
+                        <div class="footer__social">
+                            <a href="https://www.facebook.com/szabo.richaard" target="_blank" class="footer__social-link">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                            <a href="https://www.instagram.com/ekenikol/" target="_blank" class="footer__social-link">
+                                <i class='bx bxl-instagram-alt' ></i>
+                            </a>
+                            <a href="https://twitter.com/nindzsasztik" target="_blank" class="footer__social-link">
+                                <i class='bx bxl-twitter' ></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer__content">
+                        <h3 class="footer__title">A csapat</h3>
+                        
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">Rólunk</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Jellemzők</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Hírek</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__content">
+                        <h3 class="footer__title">Szolgáltatásaink</h3>
+                        
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">Árazás</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Kedvezmények</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Szállítási módok</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__content">
+                        <h3 class="footer__title">Cégünk</h3>
+                        
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Rólunk</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Céljaink</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <span class="footer__copy">&#169; Rémisztők. Minden jog fenntartva</span>
+
+                <img src="assets/img/footer1-img.png" alt="" class="footer__img-one">
+                <img src="assets/img/footer2-img.png" alt="" class="footer__img-two">
+            </footer>
+        </div>
+
+            <!--=============== GÖRGESS FEL ===============-->
+            <a href="#" class="scrollup" id="scroll-up">
+                <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+            </a>
+        
+        <!--=============== Fedd fel a Js-t ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
